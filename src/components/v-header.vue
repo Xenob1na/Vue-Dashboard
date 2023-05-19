@@ -21,13 +21,23 @@
                  background: #2E323C;
                  border-radius: 12px;
                  border: none;
-                 color:  white;
+                 color:  #fff;
                  outline: none;
                  padding-left: 15px;
+                 font-family: 'Raleway';
+                 cursor: pointer;
                  "
                  class="inputik"
             />
             <img src="../assets/images/search.png" alt="" class="el-container-search-img">
+        </div>
+        <div class="el-container-btn">
+            <el-button class="el-container-btn-el-button"
+            text
+           
+            >
+                make a new product <el-icon class="el-icon--right plus"><Plus /></el-icon>
+            </el-button>
         </div>
     </el-container>
     </div>
@@ -37,12 +47,17 @@
 <script setup>
 
 import { ref } from 'vue'
+import { Plus } from '@element-plus/icons-vue'
+
 const input = ref('')
 
 </script>
 
 
-<style>
+<style scoped>
+:root {
+    --btn-bg-color: #181c25;
+}
 .el-container-text-h3 {
     margin: 20px 0px 0px 0px;
     font-family: 'Raleway';
@@ -99,4 +114,31 @@ const input = ref('')
     margin-left: 280px;
 }
 
+.el-container-btn-el-button {
+    width: 231px;
+    height: 66px;
+    background: linear-gradient(93.58deg, #363E52 -2%, #2B3242 117.56%);
+    border-radius: 13.5963px;
+    cursor: pointer;
+    transition: all 1s;
+    font-family: 'Raleway';
+    
+}
+.el-container-btn-el-button.is-text {
+    color: #FFFFFF;
+}
+.el-container-btn-el-button.is-text:not(.is-disabled):hover {
+  background: #1f2227;
+}
+
+.el-container-btn {
+    margin: 11px 0px 0px 96px;
+}
+.plus {
+    background-color: #818690;
+    border-radius: 5px;
+    width: 27.19px;
+    height: 27.19px;
+    margin-left: 12px;
+}
 </style>
