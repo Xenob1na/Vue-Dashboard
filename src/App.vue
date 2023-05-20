@@ -15,7 +15,7 @@ export default {
     <el-container class="container">
       <el-header><v-header/></el-header>
       <el-container>
-        <el-aside width="300px" style="margin-left: 20px; margin-top: 70px;">
+        <el-aside  style="margin-left: 20px; margin-top: 100px;">
           <v-aside/>
         </el-aside>
         <el-main><RouterView /></el-main>
@@ -35,5 +35,10 @@ export default {
 .el-header {
   margin-top: 20px;
 }
-
+.el-aside {
+  overflow: hidden;
+}
+.el-main {
+  max-width: 1054px;
+}
 </style>
