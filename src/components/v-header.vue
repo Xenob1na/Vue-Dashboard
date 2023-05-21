@@ -32,10 +32,7 @@
             <img src="../assets/images/search.png" alt="" class="el-container-search-img">
         </div>
         <div class="el-container-btn">
-            <el-button class="el-container-btn-el-button"
-            text
-           
-            >
+            <el-button class="el-container-btn-el-button" text >
                 make a new product <el-icon class="el-icon--right plus"><Plus /></el-icon>
             </el-button>
         </div>
@@ -122,6 +119,7 @@ const input = ref('')
     cursor: pointer;
     transition: all 1s;
     font-family: 'Raleway';
+    position: absolute;
     
 }
 .el-container-btn-el-button.is-text {

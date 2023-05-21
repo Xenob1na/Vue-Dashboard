@@ -37,8 +37,9 @@ export default {
 }
 .el-aside {
   overflow: hidden;
+  width: 250px;
 }
 .el-main {
-  max-width: 1054px;
+  max-width: 1150px;
 }
 </style>
