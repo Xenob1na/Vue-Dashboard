@@ -1,13 +1,8 @@
-<script>
+<script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import vAside from './components/v-aside.vue';
 import vHeader from './components/v-header.vue';
-export default {
-  components: {
-    vAside,
-    vHeader
-  }
-}
+
 </script>
 
 <template>
