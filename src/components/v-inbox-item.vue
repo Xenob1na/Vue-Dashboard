@@ -10,7 +10,7 @@
             </div>
             <div class="message-box-down">
                 <el-button class="el-container-btn-el-button" text >
-                    <el-icon class="el-icon--left"><View /></el-icon> Meeting with candidate 
+                    <el-icon class="el-icon--left"><View /></el-icon> View messages
                 </el-button>
             </div>
         </div>
@@ -55,7 +55,7 @@ const props = defineProps({
     font-weight: 400;
     font-size: 14px;
     line-height: 29px;
-    color: #393941;
+    color: #9999a0;
 }
 .message-box-p {
     margin: 0;
@@ -65,7 +65,7 @@ const props = defineProps({
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
-    color: #575762;
+    color: #898989;
 }
 .el-container-btn-el-button {
     width: 200px;
@@ -83,5 +83,15 @@ const props = defineProps({
 }
 .el-container-btn-el-button.is-text:not(.is-disabled):hover {
   background: #1f2227;
+}
+.container-messagge-box:hover {
+    transition: all 0.3s;
+}
+.container-messagge-box:hover {
+    background: #2E323C;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 </style>
