@@ -24,11 +24,12 @@ const isCollapse = ref(true)
     @close="handleClose"
     
   >
-    
+  <RouterLink to="/" >
     <el-menu-item index="2" class="el-color">
-      <RouterLink to="/" ><el-icon><icon-menu /></el-icon></RouterLink>
+     <el-icon><icon-menu /></el-icon>
       <template #title>Dashboard</template>
     </el-menu-item>
+  </RouterLink>
     <el-menu-item index="3" class="el-color">
       <el-icon><Histogram /></el-icon>
       <template #title>Reports</template>
@@ -37,10 +38,12 @@ const isCollapse = ref(true)
       <el-icon><DataLine /></el-icon>
       <template #title>Analitics</template>
     </el-menu-item>
+    <RouterLink to="/Inbox" >
     <el-menu-item index="5" class="el-color">
-      <RouterLink to="/Inbox" ><el-icon><Message /></el-icon></RouterLink>
+      <el-icon><Message /></el-icon>
       <template #title>Inbox</template>
     </el-menu-item>
+  </RouterLink>
     <el-menu-item index="6" class="el-color">
       <el-icon><setting /></el-icon>
       <template #title>Setting</template>

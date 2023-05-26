@@ -1,5 +1,6 @@
 <template>
     <div class="v-inbox-item">
+        <RouterLink :to="{path: `/Inbox/${message.id}`}" style="text-decoration: none;">
         <div class="container-messagge-box">
             <div class="message-box-up">
                 <h3 class="message-box-title">{{ message.title }}</h3>
@@ -14,6 +15,7 @@
                 </el-button>
             </div>
         </div>
+        </RouterLink>
     </div>
 </template>
 
@@ -84,7 +86,7 @@ const props = defineProps({
 .el-container-btn-el-button.is-text:not(.is-disabled):hover {
   background: #1f2227;
 }
-.container-messagge-box:hover {
+.container-messagge-box {
     transition: all 0.3s;
 }
 .container-messagge-box:hover {

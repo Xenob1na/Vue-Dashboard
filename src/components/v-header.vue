@@ -32,9 +32,31 @@
             <img src="../assets/images/search.png" alt="" class="el-container-search-img">
         </div>
         <div class="el-container-btn">
-            <el-button class="el-container-btn-el-button" text >
+            <el-button class="el-container-btn-el-button" text @click="dialogVisible = true">
                 make a new product <el-icon class="el-icon--right plus"><Plus /></el-icon>
             </el-button>
+            <el-dialog
+                v-model="dialogVisible"
+                title="Make a new product"
+                width="30%"
+                :before-close="handleClose"
+                style="border-radius: 10px;"
+            >
+                <span>
+                    <el-input v-model="inputs" placeholder="Please input" style="margin-bottom: 20px; "/>
+                    <el-input
+                        v-model="textarea"
+                        :rows="2"
+                        type="textarea"
+                        placeholder="Please input"
+                    />
+                </span>
+                <template #footer>
+                <span class="dialog-footer">
+                    <el-button @click="dialogVisible = false" class="el-container-btn-el-buttons">Cancel</el-button>
+                </span>
+                </template>
+            </el-dialog>
         </div>
     </el-container>
     </div>
@@ -45,8 +67,10 @@
 
 import { ref } from 'vue'
 import { Plus } from '@element-plus/icons-vue'
-
+const dialogVisible = ref(false)
 const input = ref('')
+const inputs = ref('')
+const textarea = ref('')
 
 </script>
 
@@ -139,4 +163,21 @@ const input = ref('')
     height: 27.19px;
     margin-left: 12px;
 }
+.el-container-btn-el-buttons {
+    width: 100px;
+    height: 40px;
+    background: linear-gradient(93.58deg, #363E52 -2%, #2B3242 117.56%);
+    border-radius: 13.5963px;
+    cursor: pointer;
+    transition: all 1s;
+    font-family: 'Raleway';
+    border: none;
+    color: #798095;
+}
+.el-button:focus, .el-button:hover {
+  color: #FFFFFF;
+  outline: 0;
+}
+
+
 </style>
