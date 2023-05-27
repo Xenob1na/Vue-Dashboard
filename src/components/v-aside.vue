@@ -44,10 +44,12 @@ const isCollapse = ref(true)
       <template #title>Inbox</template>
     </el-menu-item>
   </RouterLink>
+  <RouterLink to="/Setting" >
     <el-menu-item index="6" class="el-color">
       <el-icon><setting /></el-icon>
       <template #title>Setting</template>
     </el-menu-item>
+  </RouterLink>
   </el-menu>
 
  

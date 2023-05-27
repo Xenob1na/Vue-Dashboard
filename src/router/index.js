@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/DashboardView.vue'
 import Inbox from '../views/Inbox.vue'
-import InboxPages from '../views/InboxPages.vue'
+import InboxDetails from '../views/InboxDetails.vue'
+import Setting from '../views/Setting.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,7 +20,12 @@ const router = createRouter({
     {
       path: '/Inbox/:id',
       name: 'inboxpages',
-      component: InboxPages
+      component: InboxDetails
+    },
+    {
+      path: '/Setting',
+      name: 'setting',
+      component: Setting
     },
   ]
 })

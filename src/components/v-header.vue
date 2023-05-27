@@ -53,7 +53,7 @@
                 </span>
                 <template #footer>
                 <span class="dialog-footer">
-                    <el-button @click="dialogVisible = false" class="el-container-btn-el-buttons">Cancel</el-button>
+                    <el-button @click="dialogVisible = false" class="el-container-btn-el-buttons">Add</el-button>
                 </span>
                 </template>
             </el-dialog>
