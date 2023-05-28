@@ -5,7 +5,7 @@ This template should help get you started developing with Vue 3 + element plus i
 # What is available?
 There is a main page, a message page worked out for a click, a settings page and a 404 error page
 
-![изображение](https://github.com/Xenob1na/Vue-Dashboard/assets/105980448/d8343395-c948-4260-8fc5-b83394152e2b)
+![изображение](https://github.com/Xenob1na/Vue-Dashboard/assets/105980448/36f709ad-a553-485e-973d-fc9870c7501e)
 
 ## Recommended IDE Setup
 
