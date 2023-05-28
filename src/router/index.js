@@ -3,6 +3,7 @@ import HomeView from '../views/DashboardView.vue'
 import Inbox from '../views/Inbox.vue'
 import InboxDetails from '../views/InboxDetails.vue'
 import Setting from '../views/Setting.vue'
+import error from '../views/404.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +27,11 @@ const router = createRouter({
       path: '/Setting',
       name: 'setting',
       component: Setting
+    },
+    {
+      path: '/404',
+      name: 'error',
+      component: error
     },
   ]
 })

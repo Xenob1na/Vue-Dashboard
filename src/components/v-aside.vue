@@ -30,14 +30,18 @@ const isCollapse = ref(true)
       <template #title>Dashboard</template>
     </el-menu-item>
   </RouterLink>
+  <RouterLink to="/404" >
     <el-menu-item index="3" class="el-color">
       <el-icon><Histogram /></el-icon>
       <template #title>Reports</template>
     </el-menu-item>
+  </RouterLink>
+  <RouterLink to="/404" >
     <el-menu-item index="4" class="el-color">
       <el-icon><DataLine /></el-icon>
       <template #title>Analitics</template>
     </el-menu-item>
+  </RouterLink>
     <RouterLink to="/Inbox" >
     <el-menu-item index="5" class="el-color">
       <el-icon><Message /></el-icon>
