@@ -1,6 +1,9 @@
 # DashboardFinance
 
-This template should help get you started developing with Vue 3 in Vite.
+This template should help get you started developing with Vue 3 + element plus in Vite.
+
+# What is available?
+There is a main page, a message page worked out for a click, a settings page and a 404 error page
 
 ## Recommended IDE Setup
 
